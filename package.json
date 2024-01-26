@@ -8,7 +8,7 @@
     "screeps",
     "mod"
   ],
-  "author": "admon84",
+  "author": "Alina Shumann",
   "license": "MIT",
   "scripts": {
     "test": "standard",

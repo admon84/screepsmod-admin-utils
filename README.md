@@ -1,6 +1,6 @@
 # @admon-dev/screepsmod-admin-utils
 
-## This is a Collection of utilities for Screeps Private Server admins
+## This is a collection of utils for screeps private server admins
 
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![License](https://img.shields.io/npm/l/@admon-dev/screepsmod-admin-utils.svg)](https://npmjs.com/package/@admon-dev/screepsmod-admin-utils)
@@ -10,15 +10,15 @@
 
 ## Import Maps
 
-<span style="color:orange">NOTE: [screepsmod-mongo](https://github.com/screepsmods/screepsmod-mongo) required for map imports</span>
+<span style="color:orange">NOTE: [screepsmod-mongo](https://github.com/screepsmods/screepsmod-mongo) required for map imports.</span>
 
 The server will be paused on tick one, use `system.resumeSimulation()` to unpause.
 
-### importMapFile(mapFile.json)
+### `importMapFile(mapFile.json)`
 
 Imports a map from a file.
 
-### utils.importMap(urlOrId)
+### `utils.importMap(urlOrId)`
 
 Imports a map from a url or [maps.screepspl.us](https://maps.screepspl.us)
 
@@ -29,35 +29,35 @@ The server will be paused on tick one, use `system.resumeSimulation()` to unpaus
 
 ## CPU Commands
 
-### utils.getCPULimit(username)
+### `utils.getCPULimit(username)`
 
 Returns current cpu limit for username.
 
-### utils.setCPULimit(username, value)
+### `utils.setCPULimit(username, value)`
 
 Sets cpu limit to value for username. Will be overriden if GCLToCPU scaling is enabled.
 
-### utils.enableGCLToCPU([maxCPU], [baseCPU], [stepCPU])
+### `utils.enableGCLToCPU([maxCPU], [baseCPU], [stepCPU])`
 
-Enables GCLToCPU scaling which raises all user's CPU limit based on their GCL. The formula is "Math.min( (gclLevel * stepCPU + baseCPU), maxCPU )". Parameters are optional and default to maxCPU = 300, baseCPU = 20, stepCPU = 10. Enabling through the CLI will not persist after a server restart. Update the values in your config.yml to persist the settings.
+Enables GCLToCPU scaling which raises all user's CPU limit based on their GCL. The formula is `Math.min((gclLevel * stepCPU + baseCPU), maxCPU)`. Parameters are optional and default to maxCPU = 300, baseCPU = 20, stepCPU = 10. Enabling through the CLI will not persist after a server restart. Update the values in your config.yml to persist the settings.
 
-### utils.disableGCLToCPU()
+### `utils.disableGCLToCPU()`
 
 Disables GCLToCPU scaling. Disabling through the CLI will not persist after a server restart. Update the values in your config.yml to persist the setting.
 
 ## Shard
 
-### utils.setShardName(value)
+### `utils.setShardName(value)`
 
 ## Bots
 
-### utils.removeBots()
+### `utils.removeBots()`
 
 Removes all Bots.
 
 ## NPC Terminals
 
-### utils.addNPCTerminals(interval = 10)
+### `utils.addNPCTerminals(interval = 10)`
 
 Creates NPC Terminals.
 
@@ -65,7 +65,7 @@ The `interval` defines how often they are added, with the default value of `10` 
 
 A simple way to understand the `interval` is that it will place rooms where `x % interval === 0 && y % interval === 0`.
 
-### utils.removeNPCTerminals()
+### `utils.removeNPCTerminals()`
 
 Removes all NPC Terminals.
 
@@ -73,23 +73,23 @@ Sets the shard name
 
 ## WebSocket
 
-### utils.setSocketUpdateRate(value)
+### `utils.setSocketUpdateRate(value)`
 
 Sets socket update rate (in ms)
 
-### utils.getSocketUpdateRate() 
+### `utils.getSocketUpdateRate()`
 
 Returns current socket update rate
 
 ## Reload Config
 
-### utils.reloadConfig() 
+### `utils.reloadConfig()`
 
 Reloads the serverConfig section of a screeps-launcher config.yml
 
 ## Config file
 
-config.yml example: (This can be the same file as screeps-launcher's config.yml)
+Example config.yml
 ```yaml
 # Most of these fields will live reload on save. 
 # Values set here will override any saved via CLI on server startup

@@ -1,24 +1,19 @@
 {
-  "name": "screepsmod-admin-utils",
+  "name": "@admon-dev/screepsmod-admin-utils",
   "version": "1.31.2",
-  "description": "",
+  "description": "A screeps mod with utils for private server admins.",
   "main": "index.js",
-  "scripts": {
-    "test": "standard",
-    "2npm": "publish"
-  },
-  "devDependencies": {
-    "@screeps/backend": "^3.2.3",
-    "publish": "^0.6.0",
-    "standard": "*"
-  },
   "screeps_mod": true,
   "keywords": [
     "screeps",
     "mod"
   ],
-  "author": "Alina Shumann",
+  "author": "admon84",
   "license": "MIT",
+  "scripts": {
+    "test": "standard",
+    "2npm": "publish"
+  },
   "dependencies": {
     "axios": "^0.19.0",
     "body-parser": "^1.19.0",
@@ -27,7 +22,17 @@
     "screepsmod-admin-utils-ui": "^0.4.0",
     "yamljs": "^0.3.0"
   },
+  "devDependencies": {
+    "@screeps/backend": "^3.2.3",
+    "publish": "^0.6.0",
+    "standard": "*"
+  },
   "peerDependencies": {
     "@screeps/backend": ">=3.2.3"
-  }
+  },
+  "repository": "github:admon84/screepsmod-admin-utils",
+  "bugs": {
+    "url": "https://github.com/admon84/screepsmod-admin-utils/issues"
+  },
+  "homepage": "https://github.com/admon84/screepsmod-admin-utils#readme"
 }

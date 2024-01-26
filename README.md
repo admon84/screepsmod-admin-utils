@@ -12,6 +12,12 @@
 
 ## Commands
 
+### importMapFile(mapFile.json)
+
+Imports a map from a file.
+
+The server will be paused on tick one, use `system.resumeSimulation()` to unpause.
+
 ### utils.importMap(urlOrId)
 
 <span style="color:orange">NOTE: [screepsmod-mongo](https://github.com/screepsmods/screepsmod-mongo) required for map imports</span>
@@ -21,7 +27,7 @@ Imports a map from a url or [maps.screepspl.us](https://maps.screepspl.us)
 If the id is `random` or `random_WxH` a map will be randomly selected.
 1x1 is assumed if size isn't specified.
 
-The server will be paused on tick one, use `system.resumeSimulation()` to unpause
+The server will be paused on tick one, use `system.resumeSimulation()` to unpause.
 
 ### utils.addNPCTerminals(interval = 10)
 

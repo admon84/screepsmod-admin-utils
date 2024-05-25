@@ -1,14 +1,15 @@
-# screepsmod-admin-utils
+# @admon-dev/screepsmod-admin-utils
 
-## This is a Collection of utilities for Screeps Private Server admins
+This is a Collection of utilities for Screeps Private Server admins.
+
+> [!CAUTION]
+> Experimental version. Use official [screepsmod-admin-utils](https://github.com/screepsmods/screepsmod-admin-utils) for the best experience.
 
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-[![License](https://img.shields.io/npm/l/screepsmod-admin-utils.svg)](https://npmjs.com/package/screepsmod-admin-utils)
-[![Version](https://img.shields.io/npm/v/screepsmod-admin-utils.svg)](https://npmjs.com/package/screepsmod-admin-utils)
-[![Downloads](https://img.shields.io/npm/dw/screepsmod-admin-utils.svg)](https://npmjs.com/package/screepsmod-admin-utils)
-[![CircleCI](https://circleci.com/gh/screepsmods/screepsmod-admin-utils/tree/master.svg?style=shield)](https://circleci.com/gh/screepsmods/screepsmod-admin-utils/tree/master)
+[![License](https://img.shields.io/npm/l/@admon-dev/screepsmod-admin-utils.svg)](https://npmjs.com/package/@admon-dev/screepsmod-admin-utils)
+[![Version](https://img.shields.io/npm/v/@admon-dev/screepsmod-admin-utils.svg)](https://npmjs.com/package/@admon-dev/screepsmod-admin-utils)
 
-![npm](https://nodei.co/npm/screepsmod-admin-utils.png "NPM")
+[![NPM](https://nodei.co/npm/@admon-dev/screepsmod-admin-utils.png)](https://npmjs.com/package/@admon-dev/screepsmod-admin-utils)
 
 ## Import Maps
 

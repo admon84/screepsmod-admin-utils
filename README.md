@@ -12,7 +12,8 @@
 
 ## Import Maps
 
-<span style="color:orange">NOTE: [screepsmod-mongo](https://github.com/screepsmods/screepsmod-mongo) required for map imports.</span>
+> [!IMPORTANT]
+> [screepsmod-mongo](https://github.com/screepsmods/screepsmod-mongo) required for map imports.
 
 After importing a map, restart the server and use `system.resumeSimulation()` to unpause (start) game ticks.
 
@@ -25,7 +26,7 @@ If the id is `random` or `random_WxH` a map will be randomly selected.
 
 ### `utils.importMapFile(filePath)`
 
-Imports a map from a file.
+Imports a map from a json file.
 
 ### `utils.addNPCTerminals(interval = 10)`
 
@@ -42,16 +43,6 @@ Removes all NPC Terminals.
 ### `utils.removeBots()`
 
 Removes all Bots.
-
-### `utils.setTickRate(value)` <span style="color:red">DEPRECATED</span>
-
-Deprecated in favor of `system.setTickDuration(value)`   
-~~Sets the tick rate to value (in milliseconds)~~
-
-### `utils.getTickRate()` <span style="color:red">DEPRECATED</span>
-
-Deprecated in favor of `system.getTickDuration()`   
-~~Gets the current tick rate~~
 
 ### `utils.setSocketUpdateRate(value)`
 
@@ -84,8 +75,6 @@ Disables GCLToCPU scaling. Disabling through the CLI will not persist after a se
 ### `utils.reloadConfig()`
 
 Reloads the serverConfig section of a screeps-launcher config.yml
-
-## Config file
 
 config.yml example: (This can be the same file as screeps-launcher's config.yml)
 ```yaml

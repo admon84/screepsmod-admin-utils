@@ -1,5 +1,5 @@
 {
-  "name": "screepsmod-admin-utils",
+  "name": "@admon-dev/screepsmod-admin-utils",
   "version": "1.31.3",
   "description": "A screeps mod with utils for private server admins.",
   "main": "index.js",

@@ -1,20 +1,18 @@
 # @admon-dev/screepsmod-admin-utils
 
+[![Code Style](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![License](https://img.shields.io/npm/l/@admon-dev/screepsmod-admin-utils.svg)](https://npmjs.com/package/@admon-dev/screepsmod-admin-utils)
+[![NPM](https://img.shields.io/npm/v/@admon-dev/screepsmod-admin-utils.svg)](https://npmjs.com/package/@admon-dev/screepsmod-admin-utils)
+
 This is a Collection of utilities for Screeps Private Server admins.
 
 > [!CAUTION]
 > Experimental version. Use official [screepsmod-admin-utils](https://github.com/screepsmods/screepsmod-admin-utils) for the best experience.
 
-[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-[![License](https://img.shields.io/npm/l/@admon-dev/screepsmod-admin-utils.svg)](https://npmjs.com/package/@admon-dev/screepsmod-admin-utils)
-[![Version](https://img.shields.io/npm/v/@admon-dev/screepsmod-admin-utils.svg)](https://npmjs.com/package/@admon-dev/screepsmod-admin-utils)
-
-[![NPM](https://nodei.co/npm/@admon-dev/screepsmod-admin-utils.png)](https://npmjs.com/package/@admon-dev/screepsmod-admin-utils)
-
 ## Import Maps
 
 > [!IMPORTANT]
-> [screepsmod-mongo](https://github.com/screepsmods/screepsmod-mongo) required for map imports.
+> [screepsmod-mongo](https://github.com/screepsmods/screepsmod-mongo) is required for map imports.
 
 After importing a map, restart the server and use `system.resumeSimulation()` to unpause (start) game ticks.
 
@@ -67,7 +65,7 @@ Sets cpu limit to value for username. Will be overriden if GCLToCPU scaling is e
 
 ### `utils.enableGCLToCPU([maxCPU], [baseCPU], [stepCPU])`
 
-Enables GCLToCPU scaling which raises all user's CPU limit based on their GCL. The formula is "Math.min( (gclLevel * stepCPU + baseCPU), maxCPU )". Parameters are optional and default to maxCPU = 300, baseCPU = 20, stepCPU = 10. Enabling through the CLI will not persist after a server restart. Update the values in your config.yml to persist the settings.
+Enables GCLToCPU scaling which raises all user's CPU limit based on their GCL. The formula is `Math.min((gclLevel * stepCPU + baseCPU), maxCPU)`. Parameters are optional and default to maxCPU: 300, baseCPU: 20, stepCPU: 10. Enabling through the CLI will not persist after a server restart. Update the values in your config.yml to persist the settings.
 
 ### `utils.disableGCLToCPU()`
 
@@ -105,9 +103,9 @@ serverConfig:
 
 ## Endpoints
 
-A few extra endpoints are implemented enabling some extra debuging and tools
+A few extra endpoints are implemented enabling some extra debuging and tools.
 
-`GET /stats` Lots of useful stats on server performance
-`GET /api/user/world-start-room` Dynamically returns a start room for the client
-`GET /api/experimental/pvp` Same as on mmo, returns active pvp rooms.
-`GET /api/experimental/nukes` Same as on mmo, returns nukes.
+- `GET /stats` Lots of useful stats on server performance.
+- `GET /api/user/world-start-room` Dynamically returns a start room for the client.
+- `GET /api/experimental/pvp` Same as on mmo, returns active pvp rooms.
+- `GET /api/experimental/nukes` Same as on mmo, returns nukes.
